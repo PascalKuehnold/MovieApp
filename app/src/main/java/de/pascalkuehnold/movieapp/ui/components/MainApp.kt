@@ -15,17 +15,6 @@ import de.pascalkuehnold.movieapp.ui.theme.MovieAppTheme
 @Composable
 fun MainApp(content: @Composable () -> Unit) {
     MovieAppTheme {
-        Scaffold(
-            topBar = {
-                TopAppBar(
-                    backgroundColor = Color.Magenta,
-                    elevation = 5.dp
-                ) {
-                    Text(text = "Movies")
-                }
-            }
-        ) {
-            content()
-        }
+        content()
     }
 }
